@@ -1,8 +1,9 @@
 <?php
 
-namespace Torralbodavid\IdentityCardChecker\Tests;
+namespace Torralbodavid\IdentityCardChecker\Tests\Rules;
 
 use Torralbodavid\IdentityCardChecker\Rules\IdCard;
+use Torralbodavid\IdentityCardChecker\Tests\TestCase;
 
 class IdCardTest extends TestCase
 {
