@@ -60,13 +60,13 @@ class IdCardES implements Rule
      */
     private function cif(): bool
     {
-        $validation = $this->idCard[2] + $this->idCard[4] + $this->idCard[6];
+        $validation = (int)$this->idCard[2] + (int)$this->idCard[4] + (int)$this->idCard[6];
 
         for ($i = 1; $i < 8; $i += 2) {
-            $validation += (int)substr((2 * $this->idCard[$i]), 0, 1) + (int)substr((2 * $this->idCard[$i]), 1, 1);
+            $validation += (int)substr((2 * (int)$this->idCard[$i]), 0, 1) + (int)substr((2 * (int)$this->idCard[$i]), 1, 1);
         }
 
-        $n = 10 - substr($validation, strlen($validation) - 1, 1);
+        $n = 10 - (int)substr($validation, strlen($validation) - 1, 1);
 
         if ($this->idCard[8] == chr(64 + $n) || $this->idCard[8] == substr($n, strlen($n) - 1, 1)) {
             return true;
