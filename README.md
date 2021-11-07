@@ -30,16 +30,12 @@ Feel free to open an issue if you want your country id to be supported or also o
 Add the following rule on your form validation:
 
 ```php
-    'id_validation' => new IdCardES()
-```
-
-```php
     use Torralbodavid\IdentityCardChecker\Rules\IdCardES;
 
     
     $request->validate([
         ...
-        'id_validation' => new IdCardES(),
+        'id_validation' => new IdCard('es'),
     ]);
 ```
 

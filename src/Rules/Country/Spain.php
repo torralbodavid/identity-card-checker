@@ -1,10 +1,8 @@
 <?php
 
-namespace Torralbodavid\IdentityCardChecker\Rules;
+namespace Torralbodavid\IdentityCardChecker\Rules\Country;
 
-use Illuminate\Contracts\Validation\Rule;
-
-class IdCardES implements Rule
+class Spain extends Country
 {
     private const REGEX = [
         'dni' => '/^(([KLM]\d{7})|(\d{8}))([A-Z])$/',
@@ -13,7 +11,6 @@ class IdCardES implements Rule
     ];
     private const DNI_VALIDATION_CHARS = 'TRWAGMYFPDXBNJZSQVHLCKE';
     private const NIE_VALIDATION_CHARS = 'XYZ';
-    private string $idCard;
 
     public function passes($attribute, $value)
     {
@@ -30,11 +27,6 @@ class IdCardES implements Rule
         }
 
         return false;
-    }
-
-    public function message()
-    {
-        return "identity-card-checker::messages.incorrect_id_card";
     }
 
     /**
