@@ -24,11 +24,11 @@ class IdCard implements Rule
 
     public function passes($attribute, $value)
     {
-        return (new Spain())->passes($attribute, $value);
+        return $this->country->passes($attribute, $value);
     }
 
     public function message()
     {
-        return (new Spain())->message();
+        return $this->country->message();
     }
 }
