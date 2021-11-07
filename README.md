@@ -1,4 +1,4 @@
-# Identity Card Checker
+# Identity Card Checker Laravel validation rules
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/torralbodavid/identity-card-checker.svg?style=flat-square)](https://packagist.org/packages/torralbodavid/identity-card-checker)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/torralbodavid/identity-card-checker/run-tests?label=tests)](https://github.com/torralbodavid/identity-card-checker/actions?query=workflow%3Arun-tests+branch%3Amain)
