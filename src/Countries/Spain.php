@@ -1,6 +1,6 @@
 <?php
 
-namespace Torralbodavid\IdentityCardChecker\Rules\Country;
+namespace Torralbodavid\IdentityCardChecker\Countries;
 
 class Spain extends Country
 {
