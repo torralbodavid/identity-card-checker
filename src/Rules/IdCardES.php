@@ -11,10 +11,8 @@ class IdCardES implements Rule
         'nie' => '/^[XYZ]\d{7,8}[A-Z]$/',
         'cif' => '/^([ABCDEFGHJNPQRSUVW])(\d{7})([0-9A-J])$/',
     ];
-
     private const DNI_VALIDATION_CHARS = 'TRWAGMYFPDXBNJZSQVHLCKE';
     private const NIE_VALIDATION_CHARS = 'XYZ';
-
     private string $idCard;
 
     public function passes($attribute, $value)
