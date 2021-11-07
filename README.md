@@ -1,9 +1,10 @@
 # Identity Card Checker Laravel Validation Rules
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/torralbodavid/identity-card-checker.svg?style=flat-square)](https://packagist.org/packages/torralbodavid/identity-card-checker)
+[![Latest Stable Version](http://poser.pugx.org/torralbodavid/identity-card-checker/v)](https://packagist.org/packages/torralbodavid/identity-card-checker)
+[![Total Downloads](http://poser.pugx.org/torralbodavid/identity-card-checker/downloads)](https://packagist.org/packages/torralbodavid/identity-card-checker)
+[![License](http://poser.pugx.org/torralbodavid/identity-card-checker/license)](https://packagist.org/packages/torralbodavid/identity-card-checker) [![PHP Version Require](http://poser.pugx.org/torralbodavid/identity-card-checker/require/php)](https://packagist.org/packages/torralbodavid/identity-card-checker)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/torralbodavid/identity-card-checker/run-tests?label=tests)](https://github.com/torralbodavid/identity-card-checker/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/torralbodavid/identity-card-checker/Check%20&%20fix%20styling?label=code%20style)](https://github.com/torralbodavid/identity-card-checker/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/torralbodavid/identity-card-checker.svg?style=flat-square)](https://packagist.org/packages/torralbodavid/identity-card-checker)
 
 Use this package to validate the identity card number from your country
 
@@ -22,7 +23,7 @@ php artisan vendor:publish --provider="Torralbodavid\IdentityCardChecker\Identit
 
 ## Usage
 
-🇪🇸 Currently we are only supporting validation of Spanish documents: DNI, NIE and CIF. 
+🇪🇸 Currently we are only supporting validation of Spanish documents: DNI, NIE and CIF.
 
 Feel free to open an issue if you want your country id to be supported or also open a pull request.
 
