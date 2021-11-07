@@ -22,7 +22,7 @@ php artisan vendor:publish --provider="Torralbodavid\IdentityCardChecker\Identit
 
 ## Usage
 
-🇪🇸 Currently we are only supporting validation of Spanish documents: DNI, NIE y CIF. 
+🇪🇸 Currently we are only supporting validation of Spanish documents: DNI, NIE and CIF. 
 
 Feel free to open an issue if you want your country id to be supported or also open a pull request.
 
