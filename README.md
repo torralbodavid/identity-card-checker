@@ -20,6 +20,28 @@ You can publish the config file with:
 php artisan vendor:publish --provider="Torralbodavid\IdentityCardChecker\IdentityCardCheckerServiceProvider" --tag="identity-card-checker-config"
 ```
 
+## Usage
+
+🇪🇸 Currently we are only supporting validation of Spanish documents: DNI, NIE y CIF. 
+
+Feel free to open an issue if you want your country id to be supported or also open a pull request.
+
+Add the following rule on your form validation:
+
+```php
+    'id_validation' => new IdCardES()
+```
+
+```php
+    use Torralbodavid\IdentityCardChecker\Rules\IdCardES;
+   
+    
+    $request->validate([
+        ...
+        'id_validation' => new IdCardES(),
+    ]);
+```
+
 ## Testing
 
 ```bash
