@@ -14,9 +14,10 @@ class IdCard implements Rule
     /**
      * @throws Exception
      */
-    public function __construct(protected ?string $language = null) {
+    public function __construct(protected ?string $language = null)
+    {
         $this->country = match ($this->language) {
-          'es' => new Spain(),
+            'es' => new Spain(),
             default => throw new Exception(trans('identity-card-checker::messages.country_not_supported'))
         };
     }
