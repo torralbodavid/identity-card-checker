@@ -1,0 +1,65 @@
+{
+    "name": "torralbodavid/identity-card-checker",
+    "description": "Use this package to validate the identity card number from your country",
+    "keywords": [
+        "torralbodavid",
+        "laravel",
+        "identity-card-checker"
+    ],
+    "homepage": "https://github.com/torralbodavid/identity-card-checker",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Torralbo",
+            "email": "davidtorralboperez@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "spatie/laravel-package-tools": "^1.4.3",
+        "illuminate/contracts": "^8.37"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^5.3",
+        "nunomaduro/larastan": "^1.0",
+        "orchestra/testbench": "^6.15",
+        "pestphp/pest": "^1.18",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Torralbodavid\\IdentityCardChecker\\": "src",
+            "Torralbodavid\\IdentityCardChecker\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Torralbodavid\\IdentityCardChecker\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/testbench package:test --parallel --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Torralbodavid\\IdentityCardChecker\\IdentityCardCheckerServiceProvider"
+            ],
+            "aliases": {
+                "IdentityCardChecker": "Torralbodavid\\IdentityCardChecker\\IdentityCardCheckerFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

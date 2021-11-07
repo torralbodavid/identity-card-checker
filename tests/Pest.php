@@ -1,0 +1,5 @@
+<?php
+
+use Torralbodavid\IdentityCardChecker\Tests\TestCase;
+
+uses(TestCase::class)->in(__DIR__);
