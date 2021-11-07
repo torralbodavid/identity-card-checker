@@ -4,8 +4,8 @@ namespace Torralbodavid\IdentityCardChecker\Rules;
 
 use Exception;
 use Illuminate\Contracts\Validation\Rule;
-use Torralbodavid\IdentityCardChecker\Rules\Country\Country;
-use Torralbodavid\IdentityCardChecker\Rules\Country\Spain;
+use Torralbodavid\IdentityCardChecker\Countries\Country;
+use Torralbodavid\IdentityCardChecker\Countries\Spain;
 
 class IdCard implements Rule
 {
